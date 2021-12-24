@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         Vector3 motion = new Vector3(move * directional, 5f);
         rd.velocity = motion;
 
-        //if (Input.GetKeyDown(KeyCode.D))
+        //if (other.TryGetComponent(out Cube cube))
         //{
             //Length--;
             //componentSnakeTail.RemoveSphere();
@@ -51,10 +51,4 @@ public class PlayerController : MonoBehaviour
             Number.SetText(Length.ToString());
         }
     }
-
-
-    //public void ReachFinish()
-    //{
-        //Game.OnPlayerReachedFinish();
-    //}
 }

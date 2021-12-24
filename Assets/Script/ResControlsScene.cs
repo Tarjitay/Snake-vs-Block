@@ -8,6 +8,5 @@ public class ResControlsScene : MonoBehaviour
     public void NextLevel(int _123)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
-        //SceneManager.LoadScene(_123);
     }
 }

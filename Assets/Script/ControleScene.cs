@@ -8,12 +8,5 @@ public class ControleScene : MonoBehaviour
     public void NextLevel(int _123)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //SceneManager.LoadScene(_123);
     }
-
-
-    //public void NextScene()
-    //{
-       //buttonNextLevel.SetActive(true);
-    //}
 }
