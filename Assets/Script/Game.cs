@@ -23,18 +23,7 @@ public class Game : MonoBehaviour
        // Debug.Log("Game Over!");
        // ReloadLevel();
     //}
-
-    //public void OnPlayerReachedFinish()
-    //{
-       // if (CurrentState != State.Playing) return;
-
-        //CurrentState = State.Won;
-        //PlayerController.enabled = false;
-        //LevelIndex++;
-        //Debug.Log("You won!");
-        //ReloadLevel();
-    //}
-
+      
     public int LevelIndex
     {
         get => PlayerPrefs.GetInt(LevelIndexKey, 0);
