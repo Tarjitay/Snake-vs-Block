@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public int Length = 1;
     public TextMeshPro Number;
     public GameObject Food;
+    public Game Game;
 
     private SnakeTail componentSnakeTail;
 
@@ -41,7 +43,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.TryGetComponent(out Food food))
-        {
+        {            
             Destroy(other.gameObject);
 
             Length++;
@@ -49,4 +51,10 @@ public class PlayerController : MonoBehaviour
             Number.SetText(Length.ToString());
         }
     }
+
+
+    //public void ReachFinish()
+    //{
+        //Game.OnPlayerReachedFinish();
+    //}
 }
